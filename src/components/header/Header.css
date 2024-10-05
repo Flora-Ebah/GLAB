@@ -1,0 +1,152 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #00011d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  font-family: 'Artlist Sans Bold', sans-serif;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.center-section {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+  padding-right: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.desktop-menu {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop-menu .ant-menu-item {
+  padding: 0 20px;
+  color: #ffffff;
+}
+
+.desktop-menu .ant-menu-item::after {
+  border-bottom: 0 !important;
+  transition: all 0.3s ease;
+}
+
+.desktop-menu .ant-menu-item:hover::after,
+.desktop-menu .ant-menu-item-selected::after {
+  border-bottom: 4px solid #dbff00 !important;
+}
+
+.desktop-menu .ant-menu-item-selected,
+.desktop-menu .ant-menu-item:hover {
+  color: #dbff00 !important;
+}
+
+.user-button {
+  margin-left: 20px;
+  background-color: #dbff00;
+  color: #000000;
+  border: none;
+  padding: 0 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.user-button:hover,
+.user-button:focus {
+  background-color: #c2e600 !important;
+  color: #000000 !important;
+  border-color: #c2e600 !important;
+}
+
+.user-button:active {
+  background-color: #b3d600 !important;
+  color: #000000 !important;
+  border-color: #b3d600 !important;
+}
+
+.user-button .anticon {
+  margin-right: 8px;
+}
+
+.menu-toggle-button {
+  display: none;
+}
+
+.mobile-menu-drawer .ant-drawer-body {
+  padding: 0;
+}
+
+.mobile-menu-drawer .ant-menu {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle-button {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .user-button {
+    margin-left: auto;
+  }
+
+  .left-section, .right-section {
+    width: auto;
+  }
+
+  .center-section {
+    display: none;
+  }
+
+  .left-section {
+    padding-left: 0;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+
+  .right-section {
+    padding-right: 10px;
+  }
+}

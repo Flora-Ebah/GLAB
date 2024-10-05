@@ -1,0 +1,138 @@
+.footer {
+  background-color: #00011dff;
+  padding: 4rem 0 2rem;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #dbff00;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-socials a {
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #dbff00;
+}
+
+.footer-subscribe {
+  margin-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.footer-input-group {
+  display: flex;
+  gap: 10px; /* Ajoute un espace de 10px entre les éléments */
+  justify-content: center;
+}
+
+.footer-input {
+  flex-grow: 1; /* Permet à l'input de prendre tout l'espace disponible */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.footer-button {
+  padding: 0.5rem 1rem;
+  background-color: #dbff00;
+  color: #00011dff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.footer-button:hover {
+  background-color: #c2e600;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-bottom p {
+  margin-bottom: 1rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .footer-input-group {
+    flex-direction: column;
+  }
+
+  .footer-input,
+  .footer-button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .footer-button {
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,1026 @@
+.landing-page{
+    background-color: #00011dff; /* Ajout de cette ligne pour définir la couleur de fond */
+}
+
+.hero {
+  background-image: url('./../../../public/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Changé de center à space-between */
+  padding: 20px;
+  position: relative; /* Ajouté pour le positionnement des enfants */
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text-content {
+  flex: 0 0 50%; /* Changé pour occuper 50% de l'espace */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 5%; /* Réduit la marge à gauche */
+  z-index: 1; /* Assurez-vous que le texte est au-dessus des bulles */
+}
+
+.bubbles-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.bubble {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bubble span {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.bubble-1 { animation: rotate 20s linear infinite; }
+.bubble-2 { animation: rotate 20s linear infinite 5s; }
+.bubble-3 { animation: rotate 20s linear infinite 10s; }
+.bubble-4 { animation: rotate 20s linear infinite 15s; }
+
+@keyframes rotate {
+  0% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+/* Supprimez les animations counterRotate, elles ne sont plus nécessaires */
+
+/* Le reste du CSS reste inchangé */
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    width: 100%;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-content h2 .static-text {
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.text-content h2 .highlight-text {
+    display: inline-block;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150%;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #caeb00;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Media Queries pour la responsivité */
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+  }
+
+  .text-content {
+    text-align: left;
+    padding-right: 40px;
+  }
+
+  .text-content h2 {
+    font-size: 42px;
+    align-items: flex-start;
+  }
+
+  .text-content h2 .highlight-text {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-content h2 {
+    font-size: 48px;
+  }
+
+  .text-content h2 .highlight-text {
+    font-size: 52px;
+  }
+
+  .bubbles-container {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-content h2 {
+    font-size: 54px;
+  }
+
+  .text-content h2 .highlight-text {
+    font-size: 58px;
+  }
+}
+
+.video-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%; /* Modification ici pour ajouter une marge latérale */
+    color: #ffffff;
+    margin-top: 60px;
+    background-color: #00011dff;
+}
+
+.video-container {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.video-container video {
+    min-height: 250px;
+}
+
+.video-text-section .text-content {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.video-text-section h2 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.video-text-section h2 .highlight-text {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.video-text-section ul {
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .video-text-section {
+        flex-direction: row;
+        padding: 3rem 5%; /* Modification ici pour maintenir la marge latérale */
+    }
+
+    .video-container {
+        flex: 1;
+        max-width: 57%;
+        padding-right: 2rem;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+
+    .video-container video {
+        min-height: 350px;
+    }
+
+    .video-text-section .text-content {
+        flex: 1;
+        max-width: 40%;
+        text-align: left;
+    }
+
+    .video-text-section h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .video-text-section h2 .highlight-text {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .video-text-section ul {
+        max-width: none;
+        margin: 0 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .video-text-section {
+        padding: 4rem 5%; /* Modification ici pour maintenir la marge latérale */
+    }
+
+    .video-container video {
+        min-height: 450px;
+    }
+}
+
+.video-text-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 0;
+    color: #ffffff; /* Changement de la couleur du texte en blanc */
+    margin-top: 60px; /* Ajout d'une marge en haut pour séparer de la section précédente */
+    background-color: #00011dff; /* Ajout de cette ligne pour définir la couleur de fond */
+  }
+  
+  .video-container {
+    flex: 1;
+    max-width: 57%;
+    padding-right: 2rem;
+    position: relative; /* Ajout pour positionner le bouton de lecture */
+    margin-left: 5%; /* Ajout de cette ligne pour pousser le conteneur vers la droite */
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    cursor: pointer; /* Ajout pour indiquer que la vidéo est cliquable */
+  }
+  
+  /* Cacher les contrôles de la vidéo */
+  .video-container video::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  .video-container video::-webkit-media-controls-enclosure {
+    display: none !important;
+  }
+  
+  /* Bouton de lecture personnalisé */
+  .video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(24, 24, 24, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .video-play-button:hover {
+    background-color: rgba(36, 36, 35, 0.9);
+  }
+  
+  .video-play-button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid #ffffff;
+    margin-left: 7px; /* Ajustement pour centrer visuellement le triangle */
+  }
+  
+  .video-text-section .text-content {
+    flex: 1;
+    max-width: 40%;
+  }
+  
+  .video-text-section h2 {
+    font-family: 'Artlist Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFF1D6;
+    margin-bottom: 1rem;
+  }
+  
+  .video-text-section h2 .highlight-text {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 42px;
+    color: #FFF1D6;
+    margin-top: 0.5rem; /* Ajout d'un petit espace entre les deux lignes */
+  }
+  
+  .video-text-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #ffffff; /* Changement de la couleur du texte en blanc */
+  }
+  
+  .video-text-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .video-text-section li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Changement de la couleur du texte en blanc */
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .video-text-section li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #caeb00; /* Changement de la couleur de la coche pour un meilleur contraste */
+    font-weight: bold;
+  }
+  
+  .learn-more-button {
+    background-color: #caeb00;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learn-more-button:hover {
+    background-color: #d8f500;
+  }
+
+/* Styles pour la section "Pourquoi choisir l'IA pour votre recrutement ?" */
+.why-ai-section {
+  padding: 4rem 0;
+  text-align: left;
+  margin-left: 2%; /* Réduction de la marge gauche */
+  margin-right: 2%; /* Réduction de la marge droite */
+  max-width: 1400px; /* Augmentation de la largeur maximale */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why-ai-section h2 {
+  font-family: 'Artlist Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFF1D6;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background-color: #1c1d36;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border: 1px solid #333333;
+  text-align: left;
+  width: calc(33.33% - 1.33rem);
+  margin-bottom: 1.33rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  background-color: #2a2b4d;
+}
+
+.card:hover::before {
+  transform: translateX(100%);
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.large-icon {
+  font-size: 60px !important;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-header {
+  transform: translateX(5px);
+}
+
+.card h3 {
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: #caeb00;
+}
+
+.card h3 {
+  font-family: 'Artlist Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFF1D6;
+  margin-bottom: 1rem;
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+}
+
+.card h3 span {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  color: #FFF1D6;
+  margin-right: 8px;
+}
+
+.card p {
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Ajoutez une media query pour les écrans plus petits si nécessaire */
+@media (max-width: 992px) {
+  .why-ai-section .card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-ai-section .card {
+    width: 100%;
+  }
+}
+
+.testimonials-section {
+  padding: 4rem 0;
+  text-align: center;
+  color: #ffffff;
+  border: 2px solid #caeb00;
+  border-radius: 10px;
+  margin: 2rem 0;
+  overflow: hidden;
+  margin-left: 4%; /* Réduction de la marge gauche */
+  margin-right: 4%; /* Réduction de la marge droite */
+}
+
+.testimonials-section h2 {
+  margin-bottom: 2rem;
+  color: #FFF1D6;
+  font-size: 2.5rem;
+  font-family: 'Artlist Sans', sans-serif;
+}
+
+.testimonial-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-pair {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+  opacity: 0.3;
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial-pair.active {
+  opacity: 1;
+}
+
+.testimonial {
+  flex: 0 0 48%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  margin: 0 1%;
+  background-color: rgba(28, 29, 54, 0.7);
+  backdrop-filter: blur(5px);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(202, 235, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #caeb00;
+  font-size: 1.2rem;
+}
+
+.testimonial-company {
+  color: #9999a3;
+  font-size: 0.9rem;
+}
+
+.carousel-indicators {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #333333;
+  margin: 0 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #caeb00;
+  opacity: 0.5;
+}
+
+.indicator.active {
+  background-color: #caeb00;
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.job-offers-section {
+  background-color: white;
+  padding: 50px 0;
+}
+
+.job-offers-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.job-offers-text {
+  flex: 0 0 40%;
+  text-align: left;
+}
+
+.job-offers-section h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  font-family: 'Artlist Sans', sans-serif;
+}
+
+.job-offers-section p {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.job-categories {
+  flex: 0 0 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job-category {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(50% - 0.5rem);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.job-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.job-offers-section .job-category h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 32px;
+  color: #caeb00;
+}
+
+.job-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.job-category li {
+  margin-bottom: 0.5rem;
+  color: #000000;
+  transition: none;
+}
+
+.job-category:hover li {
+  color: #000000;
+}
+
+.job-category li:hover {
+  transform: none;
+  color: #000000;
+}
+
+.explore-jobs-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-jobs-button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .job-offers-content {
+    flex-direction: column;
+  }
+
+  .job-offers-text,
+  .job-categories {
+    flex: 0 0 100%;
+  }
+
+  .job-category {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .job-category {
+    flex: 0 0 100%;
+  }
+}
+
+.faq-section {
+  padding: 3rem 2rem;
+  background-color: #00011d;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.faq-content {
+  flex: 0 0 60%;
+}
+
+.faq-section h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #FFF1D6;
+  font-family: 'Artlist Sans', sans-serif;
+  font-size: 2.5rem;
+}
+
+.faq-container {
+  max-width: 100%;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 0.5rem 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.faq-toggle {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
+.faq-answer p {
+  padding: 0.5rem 0;
+  color: #9999a3;
+}
+
+.faq-image-slider {
+  flex: 0 0 35%;
+  position: relative;
+  height: 500px;
+  margin-left: 2rem;
+}
+
+.faq-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.faq-image.active {
+  opacity: 1;
+}
+
+.subscription-section {
+  background-color: #1c1d36;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.subscription-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subscription-section h2 {
+  font-size: 40px;
+  color: #FFF1D6;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subscription-section h2 span {
+  display: inline;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 30px;
+  color: #FFF1D6;
+}
+
+.subscription-section p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.start-now-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+.start-now-button:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+}
+
+.landing-bubbles-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: visible;
+  z-index: 0;
+  margin-left: auto;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-bubble {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.landing-bubble:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.landing-bubble-1 {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(76, 175, 80, 0.8);
+}
+
+.landing-bubble-2 {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+.landing-bubble-3 {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(255, 193, 7, 0.8);
+}
+
+.landing-bubble-4 {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(156, 39, 176, 0.8);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+.landing-bubble-1 { animation: rotate 20s linear infinite; }
+.landing-bubble-2 { animation: rotate 20s linear infinite 5s; }
+.landing-bubble-3 { animation: rotate 20s linear infinite 10s; }
+.landing-bubble-4 { animation: rotate 20s linear infinite 15s; }
+
+/* Ajustez le texte à l'intérieur des bulles */
+.landing-bubble span {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+  .landing-bubbles-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    padding-right: 0;
+  }
+
+  .landing-bubble {
+    transform: scale(0.7);
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg) translateX(100px) rotate(0deg) scale(0.7);
+    }
+    to {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg) scale(0.7);
+    }
+  }
+}

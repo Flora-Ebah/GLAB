@@ -1,0 +1,210 @@
+.connexion-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  padding: 2rem;
+  padding-top: 6rem; /* Ajout d'espace supplémentaire en haut */
+}
+
+.connexion-row {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.connexion-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 600px; /* Hauteur fixe */
+  padding: 0; /* Supprimez le padding ici */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+}
+
+.connexion-form-container {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.connexion-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Ajoutez une couleur de fond pour l'espace de l'image */
+  overflow: hidden; /* Ajout pour éviter tout débordement */
+}
+
+.connexion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.connexion-container .ant-tabs-nav::before {
+  border-bottom: none;
+}
+
+.connexion-container .ant-tabs-tab {
+  font-size: 16px;
+}
+
+.connexion-container .ant-form-item {
+  margin-bottom: 24px;
+}
+
+.connexion-container .ant-input-affix-wrapper {
+  padding: 8px 11px;
+}
+
+.connexion-container .ant-btn {
+  width: 100%;
+  height: 40px;
+}
+
+.connexion-container .ant-checkbox-wrapper {
+  margin-bottom: 16px;
+}
+
+.login-form-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .connexion-container {
+    height: auto; /* Hauteur automatique sur les petits écrans */
+    max-height: 80vh; /* Limite la hauteur sur les petits écrans */
+    flex-direction: column;
+  }
+  
+  .connexion-form-container,
+  .connexion-image {
+    flex: none;
+    width: 100%;
+  }
+  
+  .connexion-image {
+    display: none;
+  }
+}
+
+.tab-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.connexion-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.connexion-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group input {
+  margin-right: 0.5rem;
+}
+
+.checkbox-group label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-submit {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.btn-submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.lien-inscription {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.lien-inscription a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.lien-inscription a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .connexion-image {
+    display: none;
+  }
+  
+  .connexion-container {
+    max-width: 100%;
+  }
+}

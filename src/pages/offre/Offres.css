@@ -1,0 +1,317 @@
+.offres {
+  max-width: 100%; /* Changé de 1200px à 100% pour permettre au hero d'être plus large */
+  margin: 0 auto;
+  padding: 0; /* Supprimé le padding pour permettre au hero d'aller jusqu'aux bords */
+  background-color: #1c1d36ff; /* Ajouté pour le fond général */
+  color: #fff; /* Déjà en blanc, mais on le laisse pour être sûr */
+}
+
+.offres__hero {
+  position: relative;
+  padding: 10rem 2rem; /* Augmenté de 6rem à 10rem pour plus de hauteur */
+  max-height: 65vh; /* Ajouté pour garantir une hauteur minimale */
+  display: flex; /* Ajouté pour centrer verticalement le contenu */
+  align-items: center; /* Ajouté pour centrer verticalement le contenu */
+  overflow: hidden;
+  background-color: #00011dff; /* Changé pour la couleur du hero */
+  width: 100vw; /* Ajouté pour s'assurer que le hero prend toute la largeur de l'écran */
+  margin-left: calc(-50vw + 50%); /* Centrer le hero si le parent a une largeur limitée */
+}
+
+.offres__hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px; /* Augmenté de 800px à 1000px pour plus de largeur de contenu */
+  margin: 0 auto;
+  width: 100%; /* Ajouté pour s'assurer que le contenu prend toute la largeur disponible */
+}
+
+.offres__hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.offres__hero-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+.offres__hero-circle--1 {
+  width: 400px;
+  height: 400px;
+  background-color: #FF6B6B;
+  top: -150px;
+  left: -150px;
+  animation-delay: 0s;
+}
+
+.offres__hero-circle--2 {
+  width: 300px;
+  height: 300px;
+  background-color: #4ECDC4;
+  bottom: -100px;
+  right: 5%;
+  animation-delay: 2s;
+}
+
+.offres__hero-circle--3 {
+  width: 250px;
+  height: 250px;
+  background-color: #45B7D1;
+  top: 30%;
+  right: -100px;
+  animation-delay: 4s;
+}
+
+.offres__title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Changé en blanc */
+}
+
+.offres__subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff; /* Changé en blanc */
+}
+
+.offres__search-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.offres__input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #00011dff; /* Texte foncé pour l'input */
+  background-color: #fff; /* Fond blanc pour l'input */
+}
+
+.offres__button {
+  padding: 0.8rem 1.5rem;
+  background-color: #dbff00; /* Changé pour la couleur des boutons */
+  color: #00011dff; /* Reste en couleur foncée pour le contraste */
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offres__button:hover {
+  background-color: #c2e200; /* Version légèrement plus foncée pour l'effet hover */
+}
+
+.offres__container {
+  max-width: 1200px; /* Ajouté pour limiter la largeur du contenu principal */
+  margin: 2rem auto; /* Ajouté une marge en haut et en bas */
+  background-color: #1c1d36ff; /* Changé pour la couleur du background */
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.offres__section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff; /* Changé en blanc */
+}
+
+.offres__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.offres__card {
+  background-color: #2a2b4d; /* Légèrement plus clair que le fond pour contraste */
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offres__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.offres__card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #fff; /* Changé en blanc */
+  font-weight: 600;
+}
+
+.offres__card-entreprise,
+.offres__card-localisation,
+.offres__card-type-contrat {
+  margin-bottom: 0.5rem;
+  color: #ccc; /* Légèrement plus clair que blanc pur pour différencier */
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.offres__card-entreprise .anticon,
+.offres__card-localisation .anticon,
+.offres__card-type-contrat .anticon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.offres__card-description {
+  margin-bottom: 1rem;
+  color: #fff; /* Changé en blanc */
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.offres__card-competences-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #fff; /* Changé en blanc */
+  font-weight: 600;
+}
+
+.offres__card-competences-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.offres__card-competence {
+  display: inline-block;
+  background-color: #3a3b5d; /* Légèrement plus clair que les cartes */
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  color: #fff; /* Changé en blanc */
+  font-weight: 500;
+}
+
+.offres__card-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #dbff00; /* Changé pour la couleur des boutons */
+  color: #00011dff; /* Reste en couleur foncée pour le contraste */
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.offres__card-button:hover {
+  background-color: #c2e200; /* Version légèrement plus foncée pour l'effet hover */
+  transform: translateY(-2px);
+}
+
+.offres__card-button:active {
+  transform: translateY(0);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes bubble-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes geometric-float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(10px, 10px) rotate(5deg);
+  }
+  50% {
+    transform: translate(0, 20px) rotate(0deg);
+  }
+  75% {
+    transform: translate(-10px, 10px) rotate(-5deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(219, 255, 0, 0.3); /* Couleur jaune semi-transparente */
+  border: 2px solid rgba(219, 255, 0, 0.5); /* Bordure jaune plus visible */
+  box-shadow: 0 0 10px rgba(219, 255, 0, 0.3); /* Lueur jaune */
+  animation: geometric-float 8s ease-in-out infinite;
+}
+
+.bubble--1 {
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+}
+
+.bubble--2 {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+  top: 60%;
+  animation-delay: 1s;
+}
+
+.bubble--3 {
+  width: 80px;
+  height: 80px;
+  right: 15%;
+  top: 30%;
+  animation-delay: 2s;
+}
+
+.bubble--4 {
+  width: 50px;
+  height: 50px;
+  right: 10%;
+  bottom: 20%;
+  animation-delay: 3s;
+}
+
+.bubble--5 {
+  width: 70px;
+  height: 70px;
+  left: 30%;
+  bottom: 10%;
+  animation-delay: 4s;
+}
+
+.offres__no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 2rem;
+}

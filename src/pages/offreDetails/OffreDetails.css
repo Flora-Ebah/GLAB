@@ -1,0 +1,52 @@
+.offre-details {
+  background-color: #1c1d36;
+  min-height: 100vh;
+  padding: 7rem 2rem 2rem;
+}
+
+.offre-details__info,
+.offre-details__form {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0; /* Suppression des bords arrondis */
+}
+
+.offre-details__submit-button {
+  background-color: #dbff00 !important;
+  border-color: #dbff00 !important;
+  color: #1c1d36 !important;
+  font-weight: bold;
+  border-radius: 0; /* Suppression des bords arrondis pour le bouton */
+}
+
+.offre-details__submit-button:hover {
+  opacity: 0.9;
+}
+
+.ant-typography {
+  color: #1c1d36;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+.ant-form-item-label > label {
+  color: #1c1d36;
+}
+
+.ant-tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 0; /* Suppression des bords arrondis pour les tags */
+}
+
+/* Suppression des bords arrondis pour les composants Ant Design */
+.ant-card,
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-btn,
+.ant-select-selector,
+.ant-upload.ant-upload-select-picture-card {
+  border-radius: 0 !important;
+}

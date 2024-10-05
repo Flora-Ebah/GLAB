@@ -1,0 +1,136 @@
+body {
+  background-color: #1c1d36ff;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 80px auto 0; /* Ajout de marge en haut */
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.contact-container {
+  flex: 1;
+  max-width: 600px;
+  background-color: #00011dff;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  /* Suppression du border-radius */
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444;
+  /* Suppression du border-radius */
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: #1c1d36ff;
+  color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #dbff00;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #dbff00;
+  color: #00011dff;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  /* Suppression du border-radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: #c2e600;
+}
+
+.contact-info {
+  flex: 1;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #00011dff;
+  color: #fff;
+  /* Suppression du border-radius */
+  margin-left: 2rem;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #dbff00;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info .anticon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: #dbff00;
+}
+
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-top: 60px; /* Ajustement pour les écrans mobiles */
+  }
+
+  .contact-container,
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}

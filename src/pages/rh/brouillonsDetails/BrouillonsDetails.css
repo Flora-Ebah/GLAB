@@ -1,0 +1,48 @@
+.palette-edition {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.palette-edition .ant-btn,
+.palette-edition .ant-select,
+.palette-edition input[type="color"] {
+  margin-right: 5px;
+}
+
+.contenu-edition {
+  width: 100%;
+}
+
+.brouillons-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ant-form-item-label {
+  font-weight: bold;
+}
+
+.ant-form-item-label > label {
+  font-weight: bold;
+}
+
+.ant-space {
+  width: 100%;
+}
+
+.label-input-sans-bordure {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-weight: bold;
+}
+
+.label-input-sans-bordure:focus {
+  box-shadow: none;
+}

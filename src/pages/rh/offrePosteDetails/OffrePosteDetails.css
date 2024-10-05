@@ -1,0 +1,104 @@
+.offre-poste-details {
+  padding: 20px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.offre-poste-details .ant-card {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offre-poste-details .ant-descriptions-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offre-poste-details .ant-tag {
+  margin-right: 8px;
+}
+
+.ant-card {
+  margin-bottom: 20px;
+}
+
+.ant-list-item-meta-description p {
+  margin-bottom: 5px;
+}
+
+.main-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.statut-tag {
+  font-size: 1em;
+  padding: 5px 10px;
+}
+
+.details-card {
+  margin-bottom: 20px;
+}
+
+.competence-tag {
+  margin: 2px;
+}
+
+.candidats-card {
+  height: 100%;
+}
+
+.candidats-card.recommandes {
+  border-top: 3px solid #3f8600;
+}
+
+.candidats-card.en-attente {
+  border-top: 3px solid #faad14;
+}
+
+.candidats-card.rejetes {
+  border-top: 3px solid #cf1322;
+}
+
+.ant-list-item {
+  padding: 8px 0;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+}
+
+.ant-statistic-content {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .ant-col {
+    margin-bottom: 16px;
+  }
+}
+
+/* Ajoutez ces styles à la fin du fichier */
+
+.ant-modal-body .ant-descriptions-item-label {
+  font-weight: bold;
+}
+
+.ant-modal-body .ant-typography {
+  margin-bottom: 10px;
+}
+
+.ant-modal-body .ant-paragraph {
+  text-align: justify;
+}
+
+.ant-modal-body .ant-alert {
+  margin-top: 20px;
+}
+
+.ant-modal-body .ant-alert-message {
+  font-weight: bold;
+}
+
+.ant-modal-body .ant-alert-description {
+  margin-top: 10px;
+}

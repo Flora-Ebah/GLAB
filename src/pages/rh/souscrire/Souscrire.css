@@ -1,0 +1,48 @@
+.souscrire-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.abonnements-grid {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.abonnement-card {
+  width: 350px;
+  text-align: center;
+}
+
+.prix {
+  font-size: 2rem;
+  display: block;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.souscrire-btn {
+  width: 100%;
+}
+
+.ant-card-head-title h3 {
+  margin: 0;
+}
+
+.ant-tag {
+  margin-left: auto;
+}

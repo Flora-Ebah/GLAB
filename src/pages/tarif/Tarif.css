@@ -1,0 +1,291 @@
+.tarif-page {
+  background-color: #1c1d36ff;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarif-page .tarif-hero {
+  background-color: #2a2b4eff;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem; /* Augmenté de 4rem à 6rem */
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh; /* Ajout d'une hauteur minimale */
+  position: relative;
+  z-index: 1;
+}
+
+.tarif-page .tarif-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(219, 255, 0, 0.1), rgba(42, 43, 78, 0.3));
+  z-index: -1;
+}
+
+.tarif-page .tarif-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #dbff00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.tarif-page .tarif-hero p {
+  font-size: 1.4rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
+}
+
+.tarif-page .tarif-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.tarif-page h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.tarif-page .tarif-description {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.tarif-page .tarif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tarif-page .tarif-card {
+  background-color: #2a2b4eff;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarif-page .tarif-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tarif-page .tarif-card.populaire {
+  border: 2px solid #dbff00;
+}
+
+.tarif-page .badge-populaire {
+  background-color: #dbff00;
+  color: #1c1d36ff;
+  padding: 5px 30px;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.tarif-page .tarif-card h2 {
+  color: #dbff00;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.tarif-page .prix {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.tarif-page .periode {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.tarif-page .description {
+  color: #cccccc;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.tarif-page ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.tarif-page li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #ffffff;
+}
+
+.tarif-page li::before {
+  content: '✓';
+  color: #dbff00;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.tarif-page .btn-choisir {
+  background-color: #dbff00;
+  color: #1c1d36ff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tarif-page .btn-choisir:hover {
+  background-color: #c2e600;
+}
+
+.tarif-page .tarif-info {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #2a2b4eff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.tarif-page .tarif-info h3 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.tarif-page .tarif-info ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarif-page .tarif-info li {
+  padding: 0.5rem 1rem;
+  background-color: #3a3b5eff;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* Ajout des styles pour les bulles */
+.tarif-page {
+  position: relative;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background-color: rgba(219, 255, 0, 0.1);
+  border-radius: 50%;
+  animation: rise 15s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.bubble:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 10s;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 7s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 65%;
+  animation-duration: 6s;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 80%;
+  animation-duration: 8s;
+  animation-delay: 5s;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .tarif-page .tarif-hero {
+    padding: 4rem 1rem; /* Augmenté de 3rem à 4rem pour les appareils mobiles */
+    min-height: 30vh; /* Ajustement pour les appareils mobiles */
+  }
+
+  .tarif-page .tarif-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .tarif-page .tarif-hero p {
+    font-size: 1.2rem;
+  }
+
+  .tarif-page .tarif-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tarif-page .tarif-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

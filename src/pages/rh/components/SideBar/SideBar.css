@@ -1,0 +1,69 @@
+.site-layout-background {
+  background: #fff;
+}
+
+.ant-menu-item {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+.ant-menu-item a {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: #1890ff;
+}
+
+.ant-menu-item:hover {
+  color: #1890ff;
+}
+
+.ant-menu-item-selected {
+  background-color: #e6f7ff !important;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0,21,41,.35);
+}
+
+.sidebar-toggle {
+  padding: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-toggle:hover {
+  color: #1890ff;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -200px;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .sidebar.ant-layout-sider-collapsed {
+    left: 0;
+  }
+}
+
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}

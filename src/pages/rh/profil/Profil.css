@@ -1,0 +1,101 @@
+.profil-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.profil-info {
+  margin-top: 20px;
+}
+
+.profil-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.modifier-profil-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modifier-profil-btn:hover {
+  background-color: #0056b3;
+}
+
+.ant-card-actions {
+  background-color: #f0f2f5;
+}
+
+.ant-card-actions li {
+  margin: 12px 0;
+}
+
+.ant-card-actions button {
+  height: 40px;
+  font-size: 16px;
+}
+
+.profile-avatar {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.1);
+}
+
+.edit-button {
+  transition: all 0.3s ease;
+}
+
+.edit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.fade-in-delay-1 {
+  animation: fadeIn 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeIn 0.5s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fadeIn 0.5s ease-out 0.6s forwards;
+  opacity: 0;
+}
+
+.ant-spin-container {
+  transition: all 0.3s ease;
+}
+
+.ant-spin-spinning {
+  opacity: 0.7;
+}
