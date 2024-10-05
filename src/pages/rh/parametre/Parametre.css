@@ -1,0 +1,222 @@
+.parametre-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.page-title {
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+}
+
+.parametre-card {
+  height: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+  border: none;
+}
+
+.parametre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.ant-card-head {
+  background-color: #3498db;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 16px 24px;
+}
+
+.ant-card-head-title {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #34495e;
+}
+
+.ant-switch-checked {
+  background-color: #2ecc71;
+}
+
+.ant-slider-track {
+  background-color: #3498db;
+}
+
+.ant-slider-handle {
+  border-color: #3498db;
+}
+
+.btn-sauvegarder {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px;
+  margin-top: 40px;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  border: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-sauvegarder:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.script-modal .ant-modal-content {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.script-modal .ant-modal-header {
+  background-color: #3498db;
+  border-bottom: none;
+  padding: 16px 24px;
+}
+
+.modal-title {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.script-modal .ant-modal-body {
+  padding: 24px;
+}
+
+.script-modal .ant-tabs-nav {
+  margin-bottom: 20px;
+}
+
+.script-modal .ant-tabs-tab {
+  font-weight: 500;
+}
+
+.script-modal .ant-input[type="textarea"] {
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.ant-input, .ant-input-password, .ant-select-selector, .ant-input-number, .ant-picker {
+  border-radius: 8px !important;
+}
+
+.ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-checkbox-group-item {
+  margin-bottom: 8px;
+}
+
+.ant-upload-list-item-info {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-input[type="color"] {
+  height: 40px;
+  padding: 4px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .parametre-container {
+    padding: 20px 16px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+  }
+  
+  .ant-card-head-title {
+    font-size: 18px;
+  }
+  
+  .btn-sauvegarder {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+/* ... (styles existants) ... */
+
+.ant-upload-list-item-info {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.ant-input[type="color"] {
+  height: 32px;
+  padding: 0;
+  border: none;
+}
+
+.ant-form-item-control-input-content .ant-input-number-handler-wrap {
+  opacity: 1;
+}
+
+.ant-select-selector {
+  border-radius: 4px !important;
+}
+
+.ant-input-password {
+  border-radius: 4px;
+}
+
+/* Styles pour les nouveaux éléments */
+.parametre-card .ant-upload-list-item {
+  margin-top: 8px;
+}
+
+.parametre-card .ant-input-number-handler-wrap {
+  opacity: 1;
+}
+
+.parametre-card .ant-select-selector {
+  width: 100%;
+}
+
+/* Amélioration de l'apparence des switches */
+.ant-switch {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-switch-checked {
+  background-color: #1890ff;
+}
+
+/* Style pour le sélecteur de couleur */
+.ant-input[type="color"] {
+  cursor: pointer;
+}
+
+/* Ajustements responsifs pour les nouveaux éléments */
+@media (max-width: 768px) {
+  .ant-upload-list-item {
+    margin-bottom: 8px;
+  }
+  
+  .ant-form-item-control-input-content {
+    display: flex;
+    flex-direction: column;
+  }
+}

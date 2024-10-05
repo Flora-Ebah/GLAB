@@ -1,11 +1,29 @@
-.poster-offre {
-  max-width: 800px;
+.poster-offre-container {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
+.poster-offre-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.poster-offre-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.poster-offre-content .ant-steps {
+  flex: 0 0 200px;
+}
+
+.poster-offre-content .ant-form {
+  flex: 1;
+}
+
 .steps-content {
-  margin-top: 20px;
+  margin-top: 1rem;
   margin-bottom: 20px;
   padding: 20px;
   border: 1px dashed #e9e9e9;
@@ -16,4 +34,19 @@
 
 .steps-action {
   margin-top: 24px;
+}
+
+.step-divider {
+  border: 0;
+  height: 1px;
+  background-color: #e8e8e8;
+  margin: 16px 0;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-picker {
+  width: 100%;
 }

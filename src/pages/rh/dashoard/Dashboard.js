@@ -31,7 +31,7 @@ import ListeOffres from '../listeoffres/ListeOffres';
 import Brouillons from '../brouillons/Brouillons';
 import Calendrier from '../calendrier/Calendrier';
 import Souscrire from '../souscrire/Souscrire';
-import Parametres from '../parametres/Parametres';
+import Parametre from '../parametre/Parametre';
 import OffrePosteDetails from '../offrePosteDetails/OffrePosteDetails';
 import BrouillonsDetails from '../brouillonsDetails/BrouillonsDetails';
 
@@ -222,7 +222,7 @@ const Dashboard = () => {
             <Route path="/brouillonsDetail/:id" element={<BrouillonsDetails />} />
             <Route path="/calendrier" element={<Calendrier />} />
             <Route path="/souscrire" element={<Souscrire />} />
-            <Route path="/parametres" element={<Parametres />} />
+            <Route path="/parametres" element={<Parametre />} />
             <Route path="/offrePosteDetails/:id" element={<OffrePosteDetails />} />
           </Routes>
         </Content>
